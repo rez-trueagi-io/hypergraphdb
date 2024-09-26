@@ -161,7 +161,7 @@ public class ManyToManyIndexerTests extends HGTestBase
         }
         result.close();
         result = index.scanKeys();
-        int totalValues2 = 0;
+        long totalValues2 = 0;
         while (result.hasNext())
         {
             long forkey = index.count(result.next());
